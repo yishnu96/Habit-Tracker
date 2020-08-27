@@ -1,4 +1,11 @@
+// Importing Modules
 const express = require('express')
+const ejs = require('ejs');
+const expressLayout = require('express-ejs-layouts')
+const mongoose = require('mongoose');
+
+
+
 const app = express()
 const port = 3000
 
