@@ -1,16 +1,17 @@
 // Importing Modules
 const express = require('express')
-const ejs = require('ejs');
+const path = require('path');
+const app = express()
+
 const expressLayout = require('express-ejs-layouts')
 const mongoose = require('mongoose');
+const port = 5000
 
-
-
-const app = express()
-const port = 3000
+app.set('view engine','ejs');
+app.set('views',path.join(__dirname, 'views'));
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+    return res.render('layouts')
 })
 
 app.listen(port, () => {
