@@ -1,0 +1,29 @@
+{
+  "name": "habit-tracker",
+  "version": "1.0.0",
+  "description": "A simple habit tracking app based on NodeJS + EJS for user habit management on daily and weekly basis.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yishnu96/Habit-Tracker.git"
+  },
+  "keywords": [
+    "Habit-Tracker",
+    "EJS",
+    "Nodejs",
+    "MongoDB"
+  ],
+  "author": "Yishnu Pramanik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yishnu96/Habit-Tracker/issues"
+  },
+  "homepage": "https://github.com/yishnu96/Habit-Tracker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
