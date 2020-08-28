@@ -1,0 +1,33 @@
+<div class="app-heading-div border-bottom-px padding-10px">
+    <h1 class="heading"><%=habit.habit_name%> </h1>
+</div>
+
+<!-- Date Filtering  -->
+<div class="border-bottom-px padding-10px">
+    <div class="subheadings">Search by date :</div>
+    <div class="date-container ">
+        <div>Start Date : <input type="date" name="start-date" id="start-date" class="date-picker" required>
+        </div>
+        <div>End Date : <input type="date" name="end-date" id="end-date" class="date-picker" required> </div>
+        <button class="add" id="filter"><i class="fas fa-search"></i> Search</button>
+    </div>
+</div>
+
+<!-- Indicators -->
+<div class="key :">
+    <span>Key:</span>
+    <span style="color: gray;">Unmarked</span>
+    <span style="color: green;">Done</span>
+    <span style="color: red;">Not Done</span>
+</div>
+
+
+<!-- Making Habit Details... -->
+<div class="habit-container border-bottom-px padding-10px">
+    <ul id="item-list">
+        <!-- <li class="list-item">
+            <div class="date-div"></div>
+            <div class="status"></div>
+        </li> -->
+    </ul>
+</div>

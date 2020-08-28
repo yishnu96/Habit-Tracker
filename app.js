@@ -5,12 +5,11 @@ const sassMiddleware = require('node-sass-middleware');
 const app = express();
 const mongoose = require('mongoose');
 const db= require('./config/mongoose');
+const expressLayout = require('express-ejs-layouts');
 const port = 5000
-
 
 // ------SCSS ------//
 app.use(sassMiddleware({
-  /* Options */
   src: path.join(__dirname, './assets/sass'),
   dest: path.join(__dirname, './assets/css'),
   debug: true,
@@ -27,6 +26,12 @@ app.use(express.urlencoded());
 // ----------EJS-----------//
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname, 'views'));
+
+// ------ EJS layouts ------//
+app.use(expressLayout);
+app.set('layout extractStyles',true);
+app.set('layout extractScripts',true);
+
 
 // ------Router------------//
 app.use('/',require('./routers/index'))
