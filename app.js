@@ -16,7 +16,7 @@ app.use(sassMiddleware({
   src: path.join(__dirname, './assets/sass'),
   dest: path.join(__dirname, './assets/css'),
   debug: true,
-  outputStyle: 'expanded',
+  outputStyle: 'compressed',
   prefix:  '/css' 
 }));
 

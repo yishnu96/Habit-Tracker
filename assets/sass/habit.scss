@@ -15,12 +15,6 @@
 // all icons 
 
 
-.status{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: gray;
-}
 
 // picking date
 .date-container{
@@ -58,4 +52,27 @@
 
 .key{
     display: inline-flex;
+}
+
+// Display of list items
+#item-list{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7rem;
+    padding: 0px;
+    li{
+        list-style: none;
+        font-size: 1.5rem;
+        display: flex;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+}
+
+.status{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    position: initial;
 }
