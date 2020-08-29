@@ -1,6 +1,76 @@
-li{
-    list-style: none;
-    div{
-        display: inline;
+// Styling Form
+.habit-form{
+    display: flex;
+
+    input{
+        
+        font-size: 1.5rem;
+        padding: .3rem;
+        padding-left: .4rem;
+        width: 25rem;
+        border-radius: 25px;
+        border: none;
+    }
+
+    // buttom
+    .button{
+        margin-left: .5rem;
+        height: 100%;
+        width: 2.7rem;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        padding: .2rem;
+        border:none;
+    }
+
+    .fa-plus{
+        position: relative;
+        color: rgba(24, 22, 22, 0.925);
     }
 }
+
+
+//List to display
+
+.list-item{
+
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    padding: 0px 0px;
+
+    li{
+
+        list-style: none;
+        font-size: 2rem;
+        justify-content: left;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid rgba(236, 232, 232, 0.363);
+        cursor: pointer;
+        // border: 1px solid white;
+        width: 100%;
+        display: inline-flex;
+        flex-flow: initial;
+        padding: 5px;
+        padding-left:10px;
+
+
+        div{
+            display: inline;
+
+        }
+        .delete{
+            flex:15;
+        }
+        .fas{
+            position: inherit;
+        }
+    }
+
+}
+
+
+
+
+

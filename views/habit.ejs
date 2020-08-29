@@ -1,20 +1,29 @@
-<div class="app-heading-div border-bottom-px padding-10px">
-    <h1 class="heading"><%=habit.habit_name%> </h1>
+<!-- Stylesheets -->
+<link rel="stylesheet" href="/css/habit.css">
+
+<!-- Habit Name -->
+<div>
+    
 </div>
+
 
 <!-- Date Filtering  -->
 <div class="border-bottom-px padding-10px">
-    <div class="subheadings">Search by date :</div>
     <div class="date-container ">
-        <div>Start Date : <input type="date" name="start-date" id="start-date" class="date-picker" required>
+        <div>
+            From : 
+            <input type="date" name="start-date" id="start-date" class="date-picker" required>
         </div>
-        <div>End Date : <input type="date" name="end-date" id="end-date" class="date-picker" required> </div>
-        <button class="add" id="filter"><i class="fas fa-search"></i> Search</button>
+        <div>
+            to : 
+            <input type="date" name="end-date" id="end-date" class="date-picker" required> 
+        </div>
+        <button id="filter"><i class="fas fa-search"></i></button>
     </div>
 </div>
 
 <!-- Indicators -->
-<div class="key :">
+<div class="key">
     <span>Key:</span>
     <span style="color: gray;">Unmarked</span>
     <span style="color: green;">Done</span>
@@ -31,3 +40,7 @@
         </li> -->
     </ul>
 </div>
+
+<!-- scripts -->
+<script src="/js/moment.js"></script>
+<script src="/js/habit.js"></script>

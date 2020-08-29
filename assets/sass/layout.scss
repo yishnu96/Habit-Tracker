@@ -1,14 +1,41 @@
+//Imported Style from https://fonts.google.com/
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@800&display=swap');
+
 body{
-    background: rgba(242,244,236,1);
-    background: -moz-linear-gradient(-45deg, rgba(242,244,236,1) 0%, rgba(223,227,211,1) 0%, rgba(196,202,175,1) 0%, rgba(239,246,218,1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(242,244,236,1)), color-stop(0%, rgba(223,227,211,1)), color-stop(0%, rgba(196,202,175,1)), color-stop(100%, rgba(239,246,218,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(242,244,236,1) 0%, rgba(223,227,211,1) 0%, rgba(196,202,175,1) 0%, rgba(239,246,218,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(242,244,236,1) 0%, rgba(223,227,211,1) 0%, rgba(196,202,175,1) 0%, rgba(239,246,218,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(242,244,236,1) 0%, rgba(223,227,211,1) 0%, rgba(196,202,175,1) 0%, rgba(239,246,218,1) 100%);
-    background: linear-gradient(135deg, rgba(242,244,236,1) 0%, rgba(223,227,211,1) 0%, rgba(196,202,175,1) 0%, rgba(239,246,218,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f4ec', endColorstr='#eff6da', GradientType=1 );
+        background-color: rgba(22, 20, 20, 0.993);
+        color: whitesmoke;
+        font-family: 'Maven Pro', sans-serif;
 }
+
+//All the divs and body content
 main{
     display: grid;
     place-items: center;
+
+    div{
+        width: 35rem;
+        // border: 1px solid white;    //delete it
+        // text-align: center;
+        justify-content: center;
+        display: grid;
+    }
+}
+
+//home icon style
+.fas{
+    color: white;
+    font-size: x-large;
+    margin: 5px;
+    position: fixed;
+}
+
+// heading i.e HABIT TRACKER
+.heading{
+    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 5px solid white;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: larger;
 }

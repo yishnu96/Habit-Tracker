@@ -9,8 +9,6 @@
     let currentDate;
     let sixtyDaysBefore;
 
-
-
     // This function finds the current date 
     // finds a date of sixty days before
     // since the range of date filteration is 60 days

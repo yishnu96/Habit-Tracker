@@ -1,0 +1,56 @@
+.heading-name {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.788);
+}
+
+.status {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.date-container {
+  display: flex;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+.date-container div {
+  display: inline-flex;
+}
+
+.date-container div .date-picker {
+  font-size: 1rem;
+  background-color: rgba(43, 40, 40, 0.473);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.date-container .fas {
+  color: white;
+  font-size: large;
+  position: relative;
+}
+
+.date-container .fa-search {
+  color: black;
+}
+
+.date-container button {
+  border: none;
+  background-color: white;
+}
+
+.key {
+  display: inline-flex;
+}
