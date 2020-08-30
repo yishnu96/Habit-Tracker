@@ -15,7 +15,7 @@ moment().format();
 app.use(sassMiddleware({
   src: path.join(__dirname, './assets/sass'),
   dest: path.join(__dirname, './assets/css'),
-  debug: true,
+  debug: false,
   outputStyle: 'compressed',
   prefix:  '/css' 
 }));

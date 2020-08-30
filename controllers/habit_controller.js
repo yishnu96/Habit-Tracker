@@ -23,8 +23,8 @@ module.exports.add = function (request, response) {
             return;
         }
         else {
-            console.log("******New habit******")
-            console.log(newhabit);
+            // console.log("******New habit******")
+            // console.log(newhabit);
             return response.redirect("back");
         }
     })
@@ -101,7 +101,7 @@ module.exports.updateDates = function (request, response) {
                     return response.end('{ "status":"failed"}');
                 }
                 else {
-                    console.log("Updated!");
+                    // console.log("Updated!");
                     return response.end('{ "status":"success"}');
                 }
             });
